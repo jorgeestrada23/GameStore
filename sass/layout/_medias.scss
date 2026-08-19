@@ -1,0 +1,34 @@
+
+
+/*  RESPONSIVE */
+
+@media (max-width: 480px) {
+
+    .hero {
+        min-height: 550px;
+        background-attachment: scroll;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .games-section {
+        padding: 60px 15px;
+    }
+
+    .game-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .offer-section h2 {
+        font-size: 2.5rem;
+    }
+}
+
+

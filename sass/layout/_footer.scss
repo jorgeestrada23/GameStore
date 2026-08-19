@@ -1,0 +1,26 @@
+@use '../utilities/variables.scss' as *;
+
+/* FOOTER  */
+
+.footer {
+    padding: 50px 20px;
+    background-color: #080808;
+    color: $secondary-color;
+}
+
+.footer h3 {
+    color: #fff;
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: $secondary-color;
+}
+
+.redessociales {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}

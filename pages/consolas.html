@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameStore | Tu tienda gamer</title>
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="../style/style.css">
+
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold text-danger" href="../index.html">
+            🎮 GameStore
+        </a>
+
+        <!-- Botón hamburguesa -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-label="Abrir menú">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Enlaces -->
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./juegos.html">Juegos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./consolas.html">Consolas</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./contactanos.html">Contacto</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./sobrenosotros.html">Sobre nosotros</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+    <!-- BANNER / HERO -->
+    <header class="hero">
+
+        <div class="hero-overlay">
+            <div class="container text-center text-white">
+
+                <h1 class="display-2 fw-bold">
+                    GAME<span>STORE</span>
+                </h1>
+
+                <p class="lead">
+                    Los mejores videojuegos para los verdaderos gamers
+                </p>
+
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- JUEGOS -->
+    <main>
+
+        <section class="games-section">
+
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2 class="section-title">
+                        Consolas y Accesorios
+                    </h2>
+
+                    <p class="text-secondary">
+                        Encuentra las mejores ofertas y productos de calidad para mejorar tu experiencia de juego.
+                    </p>
+                </div>
+
+
+                <!-- FLEXBOX PARA LAS CARDS -->
+                <div class="games-container">
+
+                    <!-- CARD 1 -->
+                    <article class="game-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80"
+                            alt="Videojuego de acción"
+                        >
+
+                        <div class="game-content">
+
+                            <span class="category">
+                                Consola Ps5 slim
+                            </span>
+
+                            <h3>GameStore</h3>
+
+                            <p>
+                                La consola PlayStation 5 Slim 1TB.
+                            </p>
+
+                            <div class="card-footer">
+
+                                <strong>$499.99</strong>
+
+                                <button class="btn btn-danger">
+                                    Comprar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 2 -->
+                    <article class="game-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=800&q=80"
+                            alt="Setup gamer"
+                        >
+
+                        <div class="game-content">
+
+                            <span class="category">
+                                Consola Xbox Series X
+                            </span>
+
+                            <h3>GameStore</h3>
+
+                            <p>
+                                La consola Xbox Series X 1TB.
+                            </p>
+
+                            <div class="card-footer">
+
+                                <strong>$399.99</strong>
+
+                                <button class="btn btn-danger">
+                                    Comprar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 3 -->
+                    <article class="game-card">
+
+                        <img
+                            src="https://cdn.wccftech.com/wp-content/uploads/2025/04/nintendo-switch-2-art-HD-scaled.jpeg"
+                            alt="Consola retro"
+                        >
+
+                        <div class="game-content">
+
+                            <span class="category">
+                                Nintendo Switch 2
+                            </span>
+
+                            <h3>GameStore</h3>
+
+                            <p>
+                                La consola nintendo Switch 2 de 500GB.
+                            </p>
+
+                            <div class="card-footer">
+
+                                <strong>$299.99</strong>
+
+                                <button class="btn btn-danger">
+                                    Comprar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- CARD 4 -->
+                    <article class="game-card">
+
+                        <img
+                            src="https://tse4.mm.bing.net/th/id/OIP.7X--JWwzniPQzwpO66Tp-gHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                            alt="Consola retro"
+                        >
+
+                        <div class="game-content">
+
+                            <span class="category">
+                                Soporte de PlayStation
+                            </span>
+
+                            <h3>GameStore</h3>
+
+                            <p>
+                                Soporte para PlayStation 5 y PlayStation 4.
+                            </p>
+
+                            <div class="card-footer">
+
+                                <strong>$50.99</strong>
+
+                                <button class="btn btn-danger">
+                                    Comprar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- CARD 5 -->
+                    <article class="game-card">
+
+                        <img
+                            src="https://tse3.mm.bing.net/th/id/OIP.HkWP1zhrhOiu4ZZOvuXkegHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                            alt="Consola retro"
+                        >
+
+                        <div class="game-content">
+
+                            <span class="category">
+                                Control de Xbox
+                            </span>
+
+                            <h3>GameStore</h3>
+
+                            <p>
+                                Control inalámbrico para Xbox Series X y Xbox One.
+                            </p>
+
+                            <div class="card-footer">
+
+                                <strong>$79.99</strong>
+
+                                <button class="btn btn-danger">
+                                    Comprar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- CARD 6 -->
+                    <article class="game-card">
+
+                        <img
+                            src="https://tse4.mm.bing.net/th/id/OIP.1kvNgo3OIfTw9gVnhGU9XQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                            alt="Consola retro"
+                        >
+
+                        <div class="game-content">
+
+                            <span class="category">
+                                Auriculares Gamer
+                            </span>
+
+                            <h3>GameStore</h3>
+
+                            <p>
+                                Auriculares gamers con sonido envolvente.
+                            </p>
+
+                            <div class="card-footer">
+
+                                <strong>$59.99</strong>
+
+                                <button class="btn btn-danger">
+                                    Comprar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- CARD 7 -->
+                    <article class="game-card">
+
+                        <img
+                            src="https://tse4.mm.bing.net/th/id/OIP.rqSis5v51e5xFQfud6XTSAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                            alt="Consola retro"
+                        >
+
+                        <div class="game-content">
+
+                            <span class="category">
+                                Control de PlayStation 5
+                            </span>
+
+                            <h3>GameStore</h3>
+
+                            <p>
+                                Control de PlayStation 5 con retroalimentación háptica.
+                            </p>
+
+                            <div class="card-footer">
+
+                                <strong>$99.99</strong>
+
+                                <button class="btn btn-danger">
+                                    Comprar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- CARD 8 -->
+                    <article class="game-card">
+
+                        <img
+                            src="https://tse3.mm.bing.net/th/id/OIP.2fdyQAyJZSgGCNMV0VRKogHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                            alt="Consola retro"
+                        >
+
+                        <div class="game-content">
+
+                            <span class="category">
+                                Barra de Sonido
+                            </span>
+
+                            <h3>GameStore</h3>
+
+                            <p>
+                                Barra de sonido con efectos de audio envolvente.
+                            </p>
+
+                            <div class="card-footer">
+
+                                <strong>$20.99</strong>
+
+                                <button class="btn btn-danger">
+                                    Comprar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container text-center">
+
+            <h3>🎮 GameStore</h3>
+
+            <p>
+                Tu tienda online de videojuegos.
+            </p>
+
+            <p class="copyright">
+                © 2026 GameStore - Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>

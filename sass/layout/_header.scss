@@ -1,0 +1,48 @@
+@use '../utilities/mixins' as *;
+@use '../utilities/variables.scss' as *;
+
+/* BANNER */
+
+.hero {
+    min-height: 650px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.75)
+        ),
+        url("https://images.unsplash.com/photo-1511512578047-dfb367046420");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 56px;
+}
+
+.hero-overlay {
+    width: 100%;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    letter-spacing: 5px;
+    text-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+}
+
+.hero h1 span {
+    color: $primary-color;
+}
+
+.hero p {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero h1 {
+    animation: aparecer 1s ease-out;
+}
+
+@include animacion;

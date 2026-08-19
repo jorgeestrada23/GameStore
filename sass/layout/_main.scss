@@ -1,0 +1,46 @@
+@use '../components/cards-generales' as cards;
+@use '../utilities/variables.scss' as *;
+
+
+/* = SECCIÓN DE JUEGOS = */
+
+.games-section {
+    padding: 90px 0;
+    background-color: #151515;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+
+    width: 70px;
+    height: 4px;
+
+    background-color: $primary-color;
+
+    margin: 15px auto;
+}
+
+
+/* = OFERTAS = */
+
+.offer-section {
+    padding: 80px 20px;
+    background:
+        linear-gradient(
+            135deg,
+            #dc3545,
+            #8b0000
+        );
+}
+
+.offer-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,236 @@
+@charset "UTF-8";
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #dc3545;
+}
+
+/* BANNER */
+.hero {
+  min-height: 650px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)), url("https://images.unsplash.com/photo-1511512578047-dfb367046420");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 56px;
+}
+
+.hero-overlay {
+  width: 100%;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  letter-spacing: 5px;
+  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+}
+
+.hero h1 span {
+  color: #dc3545;
+}
+
+.hero p {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero h1 {
+  animation: aparecer 1s ease-out;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* = CARDS = */
+.games-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.game-card {
+  width: 270px;
+  background-color: #222;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(220, 53, 69, 0.3);
+}
+
+/* Imagen de la card */
+.game-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.game-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Contenido */
+.game-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.category {
+  color: #dc3545;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.game-content h3 {
+  margin-top: 8px;
+  font-size: 1.4rem;
+}
+
+.game-content p {
+  color: #aaa;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* Precio + botón */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.card-footer strong {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* = SECCIÓN DE JUEGOS = */
+.games-section {
+  padding: 90px 0;
+  background-color: #151515;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: #dc3545;
+  margin: 15px auto;
+}
+
+/* = OFERTAS = */
+.offer-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #dc3545, #8b0000);
+}
+
+.offer-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+/* FOOTER  */
+.footer {
+  padding: 50px 20px;
+  background-color: #080808;
+  color: #aaa;
+}
+
+.footer h3 {
+  color: #fff;
+}
+
+.copyright {
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.redessociales {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/*  RESPONSIVE */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 550px;
+    background-attachment: scroll;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .games-section {
+    padding: 60px 15px;
+  }
+  .game-card {
+    width: 100%;
+    max-width: 400px;
+  }
+  .offer-section h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
